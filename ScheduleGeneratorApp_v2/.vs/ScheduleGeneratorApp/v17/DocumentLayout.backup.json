@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Winform\\ChiaLichTrucChatGPT\\V3\\ScheduleGeneratorApp_v2_WithCalendar\\ScheduleGeneratorApp_v2_Modified\\ScheduleGeneratorApp_v2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{22B25FBD-4EB3-444F-90CC-0AC01BE6C0B0}|ScheduleGeneratorApp.csproj|e:\\winform\\chialichtrucchatgpt\\v3\\schedulegeneratorapp_v2_withcalendar\\schedulegeneratorapp_v2_modified\\schedulegeneratorapp_v2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22B25FBD-4EB3-444F-90CC-0AC01BE6C0B0}|ScheduleGeneratorApp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22B25FBD-4EB3-444F-90CC-0AC01BE6C0B0}|ScheduleGeneratorApp.csproj|e:\\winform\\chialichtrucchatgpt\\v3\\schedulegeneratorapp_v2_withcalendar\\schedulegeneratorapp_v2_modified\\schedulegeneratorapp_v2\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22B25FBD-4EB3-444F-90CC-0AC01BE6C0B0}|ScheduleGeneratorApp.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22B25FBD-4EB3-444F-90CC-0AC01BE6C0B0}|ScheduleGeneratorApp.csproj|E:\\Winform\\ChiaLichTrucChatGPT\\V3\\ScheduleGeneratorApp_v2_WithCalendar\\ScheduleGeneratorApp_v2_Modified\\ScheduleGeneratorApp_v2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{22B25FBD-4EB3-444F-90CC-0AC01BE6C0B0}|ScheduleGeneratorApp.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22B25FBD-4EB3-444F-90CC-0AC01BE6C0B0}|ScheduleGeneratorApp.csproj|e:\\winform\\chialichtrucchatgpt\\v3\\schedulegeneratorapp_v2_withcalendar\\schedulegeneratorapp_v2_modified\\schedulegeneratorapp_v2\\schedulegeneratorapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{22B25FBD-4EB3-444F-90CC-0AC01BE6C0B0}|ScheduleGeneratorApp.csproj|solutionrelative:schedulegeneratorapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22B25FBD-4EB3-444F-90CC-0AC01BE6C0B0}|ScheduleGeneratorApp.csproj|e:\\winform\\chialichtrucchatgpt\\v3\\schedulegeneratorapp_v2_withcalendar\\schedulegeneratorapp_v2_modified\\schedulegeneratorapp_v2\\schedulegeneratorapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{22B25FBD-4EB3-444F-90CC-0AC01BE6C0B0}|ScheduleGeneratorApp.csproj|solutionrelative:schedulegeneratorapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ScheduleGeneratorApp.csproj",
+              "DocumentMoniker": "E:\\Winform\\ChiaLichTrucChatGPT\\V3\\ScheduleGeneratorApp_v2_WithCalendar\\ScheduleGeneratorApp_v2_Modified\\ScheduleGeneratorApp_v2\\ScheduleGeneratorApp.csproj",
+              "RelativeDocumentMoniker": "ScheduleGeneratorApp.csproj",
+              "ToolTip": "E:\\Winform\\ChiaLichTrucChatGPT\\V3\\ScheduleGeneratorApp_v2_WithCalendar\\ScheduleGeneratorApp_v2_Modified\\ScheduleGeneratorApp_v2\\ScheduleGeneratorApp.csproj",
+              "RelativeToolTip": "ScheduleGeneratorApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-16T01:44:19.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ScheduleGeneratorApp",
+              "DocumentMoniker": "E:\\Winform\\ChiaLichTrucChatGPT\\V3\\ScheduleGeneratorApp_v2_WithCalendar\\ScheduleGeneratorApp_v2_Modified\\ScheduleGeneratorApp_v2\\ScheduleGeneratorApp.csproj",
+              "RelativeDocumentMoniker": "ScheduleGeneratorApp.csproj",
+              "ToolTip": "E:\\Winform\\ChiaLichTrucChatGPT\\V3\\ScheduleGeneratorApp_v2_WithCalendar\\ScheduleGeneratorApp_v2_Modified\\ScheduleGeneratorApp_v2\\ScheduleGeneratorApp.csproj",
+              "RelativeToolTip": "ScheduleGeneratorApp.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-16T01:44:21.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "E:\\Winform\\ChiaLichTrucChatGPT\\V3\\ScheduleGeneratorApp_v2_WithCalendar\\ScheduleGeneratorApp_v2_Modified\\ScheduleGeneratorApp_v2\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "E:\\Winform\\ChiaLichTrucChatGPT\\V3\\ScheduleGeneratorApp_v2_WithCalendar\\ScheduleGeneratorApp_v2_Modified\\ScheduleGeneratorApp_v2\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T08:08:01.175Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "E:\\Winform\\ChiaLichTrucChatGPT\\V3\\ScheduleGeneratorApp_v2_WithCalendar\\ScheduleGeneratorApp_v2_Modified\\ScheduleGeneratorApp_v2\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "E:\\Winform\\ChiaLichTrucChatGPT\\V3\\ScheduleGeneratorApp_v2_WithCalendar\\ScheduleGeneratorApp_v2_Modified\\ScheduleGeneratorApp_v2\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAowEEAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T08:07:52.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "E:\\Winform\\ChiaLichTrucChatGPT\\V3\\ScheduleGeneratorApp_v2_WithCalendar\\ScheduleGeneratorApp_v2_Modified\\ScheduleGeneratorApp_v2\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "E:\\Winform\\ChiaLichTrucChatGPT\\V3\\ScheduleGeneratorApp_v2_WithCalendar\\ScheduleGeneratorApp_v2_Modified\\ScheduleGeneratorApp_v2\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAHEBAAAAAAAAAAApwHYBAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T07:30:13.734Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
