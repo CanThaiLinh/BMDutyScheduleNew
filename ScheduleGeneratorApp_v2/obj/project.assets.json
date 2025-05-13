@@ -934,11 +934,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Winform\\ChiaLichTrucChatGPT\\V3\\ScheduleGeneratorApp_v2_WithCalendar\\ScheduleGeneratorApp_v2_Modified\\ScheduleGeneratorApp_v2\\ScheduleGeneratorApp.csproj",
+      "projectUniqueName": "E:\\Winform\\ChiaLichTrucChatGPT\\TheLast\\ScheduleGeneratorApp_v2\\ScheduleGeneratorApp.csproj",
       "projectName": "ScheduleGeneratorApp",
-      "projectPath": "E:\\Winform\\ChiaLichTrucChatGPT\\V3\\ScheduleGeneratorApp_v2_WithCalendar\\ScheduleGeneratorApp_v2_Modified\\ScheduleGeneratorApp_v2\\ScheduleGeneratorApp.csproj",
+      "projectPath": "E:\\Winform\\ChiaLichTrucChatGPT\\TheLast\\ScheduleGeneratorApp_v2\\ScheduleGeneratorApp.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "E:\\Winform\\ChiaLichTrucChatGPT\\V3\\ScheduleGeneratorApp_v2_WithCalendar\\ScheduleGeneratorApp_v2_Modified\\ScheduleGeneratorApp_v2\\obj\\",
+      "outputPath": "E:\\Winform\\ChiaLichTrucChatGPT\\TheLast\\ScheduleGeneratorApp_v2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

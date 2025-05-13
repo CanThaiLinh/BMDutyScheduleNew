@@ -17,6 +17,10 @@ namespace ScheduleGeneratorApp
         private List<Employee> employees = new List<Employee>();
         private DataTable oldDataTable;
         private DataTable newScheduleTable;
+        private List<int> oldHolidays = new List<int> {15,16};
+        private List<int> newHolidays = new List<int>();
+
+        Dictionary<string, ScheduleModel> dicNgayDiLamOld = new Dictionary<string, ScheduleModel>();
 
         public Form1()
         {
@@ -255,6 +259,7 @@ namespace ScheduleGeneratorApp
         
         private void btnExport_Click(object sender, EventArgs e)
         {
+
             using (SaveFileDialog sfd = new SaveFileDialog())
             {
                 sfd.Filter = "Excel Files|*.xlsx";
@@ -263,7 +268,7 @@ namespace ScheduleGeneratorApp
                 {
                     using (var package = new ExcelPackage())
                     {
-                        var ws = package.Workbook.Worksheets.Add("NewSchedule");
+                        var ws = package.Workbook.Worksheets.Add("Phân lịch");
                         for (int i = 0; i < newScheduleTable.Columns.Count; i++)
                             ws.Cells[1, i + 1].Value = newScheduleTable.Columns[i].ColumnName;
 
@@ -272,7 +277,20 @@ namespace ScheduleGeneratorApp
                             for (int c = 0; c < newScheduleTable.Columns.Count; c++)
                             {
                                 ws.Cells[r + 2, c + 1].Value = newScheduleTable.Rows[r][c];
-                            }
+
+                                //lam cach oc cho tim id phong
+                                foreach (var emp in employees)
+                                {
+                                    if (emp.FullName == newScheduleTable.Rows[r][c].ToString())
+                                    {
+                                        var bgColor = GetColorForDepartment(emp.IdDepartment);
+                                        ws.Cells[r + 2, c + 1].Style.Fill.PatternType = OfficeOpenXml.Style.ExcelFillStyle.Solid;
+                                        ws.Cells[r + 2, c + 1].Style.Fill.BackgroundColor.SetColor(bgColor);
+                                        break;
+                                    }
+                                }
+                                
+                            }                            
                         }
 
                         package.SaveAs(new FileInfo(sfd.FileName));
@@ -281,6 +299,7 @@ namespace ScheduleGeneratorApp
                     MessageBox.Show("Xuất file thành công!");
                 }
             }
+            
         }
 
         private System.Drawing.Color GetColorForDepartment(int idDept)
@@ -295,7 +314,7 @@ namespace ScheduleGeneratorApp
                 6 => System.Drawing.Color.LightGreen,
                 7 => System.Drawing.Color.Yellow,
                 8 => System.Drawing.Color.Gray,
-                _ => System.Drawing.Color.White
+                _ => System.Drawing.Color.Pink
             };
         }
         private void ColorizeRowsByDepartment()
@@ -326,6 +345,10 @@ namespace ScheduleGeneratorApp
         {
             using (var package = new OfficeOpenXml.ExcelPackage())
             {
+
+                //sheet data cu
+
+                //sheet data da chia
                 var worksheet = package.Workbook.Worksheets.Add("Employees");
 
                 for (int i = 0; i < dataGridView1.Columns.Count; i++)
@@ -368,32 +391,51 @@ namespace ScheduleGeneratorApp
                 }
             }
         }
-        private void btnGenerateCalendar_Click(object sender, EventArgs e)
+
+        private Dictionary<string, ScheduleModel> getDataDicNgayDiLam(DataTable data)
         {
-            Dictionary<string, ScheduleModel> dicNgayDiLam = new Dictionary<string, ScheduleModel>();
+            Dictionary<string, ScheduleModel> dicNgayDiLam = new Dictionary<string, ScheduleModel>();        
             // Kiem tra so ngay
-            for (int i = 0; i < newScheduleTable.Rows.Count; i++)
+            for (int i = 0; i < data.Rows.Count; i++)
             {
-                for (int j = 2; j < newScheduleTable.Columns.Count; j++)
+                for (int j = 2; j < data.Columns.Count; j++)
                 {
-                    string fullName = newScheduleTable.Rows[i][j].ToString();
+                    string fullName = data.Rows[i][j].ToString();
                     if (!dicNgayDiLam.ContainsKey(fullName))
                     {
-                        ScheduleModel model = new ScheduleModel(0,0,0);
+                        ScheduleModel model = new ScheduleModel(0, 0, 0, 0);
                         dicNgayDiLam[fullName] = model;
                     }
                     dicNgayDiLam[fullName].numberDay += 1;
-                    if (newScheduleTable.Rows[i][1].ToString() == "7")
+                    bool weekend = false;
+                    if (data.Rows[i][1].ToString() == "7")
                     {
+                        weekend = true;
                         dicNgayDiLam[fullName].numberSaturDay += 1;
                     }
-                    if (newScheduleTable.Rows[i][1].ToString() == "CN")
+                    if (data.Rows[i][1].ToString() == "CN")
                     {
+                        weekend = true;
                         dicNgayDiLam[fullName].numberSunDay += 1;
                     }
+                    if (!weekend)
+                    {
+                        string valueDay = data.Rows[i][0].ToString();
+                        int valueDatInt = Int32.Parse(valueDay);
+                        if (oldHolidays.Contains(valueDatInt))
+                        {
+                            dicNgayDiLam[fullName].numberHoliday += 1;
+                        }
+                    }
+
                 }
             }
 
+            return dicNgayDiLam;
+        }
+        private void btnGenerateCalendar_Click(object sender, EventArgs e)
+        {
+            Dictionary<string, ScheduleModel> dicNgayDiLam = getDataDicNgayDiLam(oldDataTable);
             foreach (string key in dicNgayDiLam.Keys)
             {
                 ScheduleModel model = dicNgayDiLam[key];
@@ -401,8 +443,10 @@ namespace ScheduleGeneratorApp
                     + " \t\t" + model.numberDay
                     + " |\t" + model.numberSaturDay
                     + " |\t" + model.numberSunDay
+                    + " |\t" + model.numberHoliday
                     );
             }
+
         }
 
     }
@@ -421,12 +465,15 @@ namespace ScheduleGeneratorApp
         public int numberDay { get; set; }        
         public int numberSaturDay { get; set; }
         public int numberSunDay { get; set; }
-        
-        public ScheduleModel(int numberDay, int numberSaturday, int numberSunDay)
+
+        public int numberHoliday { get; set; }
+
+        public ScheduleModel(int numberDay, int numberSaturday, int numberSunDay, int numberHoliday)
         {
             this.numberDay = numberDay;
             this.numberSaturDay = numberSaturday;
             this.numberSunDay = numberSunDay;
+            this.numberHoliday = numberHoliday;
         }
     }
 }

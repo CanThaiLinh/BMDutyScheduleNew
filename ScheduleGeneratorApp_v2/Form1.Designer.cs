@@ -42,7 +42,7 @@ namespace ScheduleGeneratorApp
             // 
             // btnGenerate
             // 
-            btnGenerate.Location = new System.Drawing.Point(118, 12);
+            btnGenerate.Location = new System.Drawing.Point(743, 12);
             btnGenerate.Name = "btnGenerate";
             btnGenerate.Size = new System.Drawing.Size(100, 30);
             btnGenerate.TabIndex = 1;
@@ -51,7 +51,7 @@ namespace ScheduleGeneratorApp
             // 
             // btnExport
             // 
-            btnExport.Location = new System.Drawing.Point(224, 12);
+            btnExport.Location = new System.Drawing.Point(889, 12);
             btnExport.Name = "btnExport";
             btnExport.Size = new System.Drawing.Size(100, 30);
             btnExport.TabIndex = 2;
@@ -70,7 +70,7 @@ namespace ScheduleGeneratorApp
             // 
             dtpMonthYear.CustomFormat = "MM/yyyy";
             dtpMonthYear.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            dtpMonthYear.Location = new System.Drawing.Point(380, 12);
+            dtpMonthYear.Location = new System.Drawing.Point(147, 14);
             dtpMonthYear.Name = "dtpMonthYear";
             dtpMonthYear.ShowUpDown = true;
             dtpMonthYear.Size = new System.Drawing.Size(150, 23);
@@ -78,7 +78,7 @@ namespace ScheduleGeneratorApp
             // 
             // btnGenerateCalendar
             // 
-            btnGenerateCalendar.Location = new System.Drawing.Point(550, 12);
+            btnGenerateCalendar.Location = new System.Drawing.Point(583, 12);
             btnGenerateCalendar.Name = "btnGenerateCalendar";
             btnGenerateCalendar.Size = new System.Drawing.Size(120, 30);
             btnGenerateCalendar.TabIndex = 5;

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CmCFkyfu0Lw=",
+  "dgSpecHash": "jf7vCHwm/tQ=",
   "success": true,
-  "projectFilePath": "E:\\Winform\\ChiaLichTrucChatGPT\\V3\\ScheduleGeneratorApp_v2_WithCalendar\\ScheduleGeneratorApp_v2_Modified\\ScheduleGeneratorApp_v2\\ScheduleGeneratorApp.csproj",
+  "projectFilePath": "E:\\Winform\\ChiaLichTrucChatGPT\\TheLast\\ScheduleGeneratorApp_v2\\ScheduleGeneratorApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\epplus\\6.2.5\\epplus.6.2.5.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\epplus.interfaces\\6.1.1\\epplus.interfaces.6.1.1.nupkg.sha512",
